@@ -1,3 +1,4 @@
+;
 /*
 ===========================================
 🏨 JSON Syntax Debugging: Hotel Booking Data
@@ -43,31 +44,32 @@ but it contains multiple syntax errors that prevent it from being parsed.
 // ============================================
 // 🔍 Provided JSON File with Errors
 // ============================================
+/////Corrected code////
 
-const invalidBookingJSON = `
 {
+
   "hotelName": "Grand City Hotel",
-  "checkInDate": "2024-05-15"
+  "checkInDate": "2024-05-15",
   "checkOutDate": "2024-05-20",
   "guests": [
     {
-      name: "Alice Johnson",
+      "name": "Alice Johnson",
       "age": 30,
       "email": "alice.johnson@example.com"
     },
     {
       "name": "Bob Smith",
-      "age": undefined,
+      "age": 25,
       "email": "bob.smith@example"
     }
   ],
   "roomDetails": {
     "type": "Suite",
     "pricePerNight": 200,
-    "amenities": ["WiFi", "Breakfast", "Parking",]
+    "amenities": ["WiFi", "Breakfast", "Parking"]
   }
 }
-`;
+;
 
 
 // ============================================
@@ -99,3 +101,11 @@ const invalidBookingJSON = `
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
 */
+
+////Answers///
+/// 1. I used JSON validator to find syntax issues also reviewed the structure carefully using syntax highlighting in VS code.
+/// 2. I copied the corrected JSON into JSON validator and returned it to Valid JSON confirming the structure is correct.
+/// 3. changing the file name to JSON because in the begining VS CODE  underlined valid JSON as a incorrect after changing js file to JSON it changed.
+/// 4. Using code editors with syntax highlighting, automatic formatting, and JSON linters can make it easier to stop issues. 
+/// writing in small sections and validating often also helps.
+
